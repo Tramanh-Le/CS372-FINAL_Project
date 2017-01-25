@@ -5,6 +5,8 @@ import javafx.scene.Group;
 
 /**
  * This is the main 'frame' that displays the application user interface
+ * 
+ * Takes the states and Splash class to display the side bar during game play.
  */
 public class MainFrame {
 

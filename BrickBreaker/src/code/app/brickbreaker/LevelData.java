@@ -103,7 +103,7 @@ public class LevelData {
 
             "OOOVOOOVOOOVOOO",
             "OVOOOVOEOVOOOVO",
-            "OOOOOOOOOOOOOOO",
+            "OOOOEOOEOOEOOOO",
             "",
             "",
             "GCGCGCGCGCGCGCG",
@@ -185,10 +185,10 @@ public class LevelData {
             "22      V    22",
             " 2B    V    B2 ",
             "  2O  V    O2  ",
-            "   2O  V  O2   ",
+            "   EO  V  OE   ",
             "    B   V B    ",
             "     2 V 2     ",
-            "      2 2      ",
+            "      E E      ",
             "       2       ",
     };
 

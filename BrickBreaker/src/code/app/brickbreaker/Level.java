@@ -219,7 +219,7 @@ public class Level extends Parent {
                             bonus.setVisible(false);
                             bonusIterator.remove();
                             group.getChildren().remove(bonus);
-
+                            // Constructor for the bonus on ball
                             if (bonus.getType() == Bonus.TYPE_SLOW) {
                                 ballDirX /= 1.5;
                                 ballDirY /= 1.5;
@@ -385,7 +385,7 @@ public class Level extends Parent {
                     ballDirY = -ballDirY;
                 }
                 if (ball.getTranslateY() > Config.SCREEN_HEIGHT) {
-                    // Ball was lost
+                    // Ball was lost, bounce offscreen
                     lostLife();
                 }
             }
@@ -444,8 +444,10 @@ public class Level extends Parent {
     }
 
     /**
-     * Retrieve brick
+     * Retrieve brick and set it in the row and column
      * 
+     * @see LevelData
+     * 			  Takes the rows and columns of the level entry and set bricks according to it.
      * @param row
      *            The brick row
      * @param col
@@ -464,7 +466,7 @@ public class Level extends Parent {
     }
 
     /**
-     * Update the game score
+     * Update the game score to add 10 points.
      * 
      * @param inc
      *            Amount to increase score
@@ -511,7 +513,9 @@ public class Level extends Parent {
     }
 
     /**
-     * Kicks a brick
+     * Kicks a bricks and add the score once it has been hit.
+     * 
+     * @see Brick.java
      * 
      * @param row
      *            The row of the brick
@@ -550,6 +554,7 @@ public class Level extends Parent {
 
     /**
      * Updates the number of lives in the game
+     * Will remove life if ball not caught by bat
      */
     private void updateLives() {
         while (lives.size() > mainFrame.getLifeCount()) {

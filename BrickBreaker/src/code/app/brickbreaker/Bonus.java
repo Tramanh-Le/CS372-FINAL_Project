@@ -5,7 +5,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 /**
- * ???
+ * This class represents a 'bonus' functions and side bar view in the game.
  */
 public class Bonus extends Parent {
 
@@ -50,7 +50,7 @@ public class Bonus extends Parent {
     private final ImageView content;
 
     /**
-     * Non-default ???
+     * Non-default images and the shadow during game.
      * 
      * @param type
      *            The type of bonus
@@ -80,20 +80,14 @@ public class Bonus extends Parent {
     }
 
     /**
-     * ???
-     * 
-     * @return
-     *         ???
+     * @return width of bonus
      */
     public int getWidth() {
         return width;
     }
 
     /**
-     * ???
-     * 
-     * @return
-     *         ???
+     * @return type of bonus dropped
      */
     public int getType() {
         return type;
